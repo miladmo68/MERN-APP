@@ -1,136 +1,67 @@
-# 📘 Blog CMS – Full MERN Stack Application
+<div align="center">
 
-A clean, responsive Blog Content Management System (CMS) built using the MERN stack with markdown support, global state via React Context, and styled using TailwindCSS and daisyUI.
-<img width="1920" height="869" alt="Blog-CMS" src="https://github.com/user-attachments/assets/d8b76ea0-ae1b-487a-b797-a5b53e6c06d9" />
----
+# 🐾 MERN Animals App
 
-## 🚀 Features
+A MERN app to create animal cards with photo uploads.
 
-- Create and view blog posts using markdown
-- Global state management using Context API
-- RESTful API with MongoDB models
-- Clean and responsive UI with TailwindCSS + daisyUI
-- Axios for API interaction
-- Modular structure for scalable development
+<a href="https://github.com/miladmo68/MERN-APP"><img src="https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code"></a>
+<a href="https://miladweb.com"><img src="https://img.shields.io/badge/Portfolio-miladweb.com-1E3A8A?style=for-the-badge&logo=aboutdotme&logoColor=white" alt="Portfolio"></a>
 
----
-
-## 📁 Folder Structure
-
-```
-mern-blog-cms-full-final/
-├── front/           # Frontend (React + Vite)
-│   ├── src/
-│   │   ├── components/   # PostCard, PostForm
-│   │   ├── context/      # PostContext
-│   │   ├── pages/        # Home.jsx
-│   │   └── utils/        # api.js (Axios calls)
-├── back/            # Backend (Express + MongoDB)
-│   ├── models/      # Post.js
-│   └── routes/      # posts.js
-```
-
-
----
-
-## ⚙️ Prerequisites
-
-- Node.js (v18 or later)
-- MongoDB (Local or MongoDB Atlas)
-
----
-
-## 🧪 Backend Setup
-
-1. Navigate to the backend folder:
-```bash
-cd back
-```
-
-2. Copy the environment file and set your MongoDB URI:
-```bash
-cp .env.example .env
-```
-
-> Example `.env`:
-```
-MONGO_URI=mongodb://localhost:27017/blog_cms
-PORT=5000
-```
-
-3. Install dependencies and run the server:
-```bash
-npm install
-npm run dev
-```
-
-4. The API will start at: `http://localhost:5000/api/posts`
-
----
-
-## 🎨 Frontend Setup
-
-1. Navigate to the frontend folder:
-```bash
-cd front
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the frontend development server:
-```bash
-npm run dev
-```
-
-4. Open your browser at: `http://localhost:5173`
-
----
-
-## 🔧 Tech Stack
-
-### Frontend
-- React 18
-- Vite
-- TailwindCSS 3
-- daisyUI
-- React Markdown
-- Context API
-- Axios
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- dotenv
-- cors
-
----
-
-## 📌 Notes
-
-- Posts are stored in MongoDB using the `Post` model
-- All post data is managed globally through `PostContext`
-- Axios is used for all communication between frontend and backend
-- You can style and expand this project using Tailwind and daisyUI components
-
----
-
-## ✅ Sample API Routes
-
-| Method | Endpoint              | Description         |
-|--------|-----------------------|---------------------|
-| GET    | `/api/posts`          | Fetch all posts     |
-| POST   | `/api/posts`          | Create new post     |
-
----
+</div>
 
 <p align="center">
-  <b>👨‍💻 Author: Milad Mohammadi</b><br>
-  🌐 <a href="https://miladweb.com">Website</a> • 💼 <a href="https://linkedin.com/in/miladmo68">LinkedIn</a> • 🐙 <a href="https://github.com/miladmo68">GitHub</a>
+  <img src="./.github/preview.jpg" alt="MERN Animals App screenshot" width="100%" />
 </p>
 
-Happy coding! 💻
+## ✨ Features
+
+- Create animal entries with photos
+- Uploads with Multer
+- Express and MongoDB backend
+
+## 🛠️ Tech Stack
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+> [!NOTE]
+> This project needs its own backend, database or API keys, so it runs locally rather than as a static demo.
+
+## 🚀 Getting Started
+
+**Prerequisites:** [Node.js](https://nodejs.org/) 18 or newer · A MongoDB database (local or MongoDB Atlas)
+
+**Install and run**
+
+```bash
+git clone https://github.com/miladmo68/MERN-APP.git
+cd MERN-APP
+npm install
+npm run server   # starts the mock API (json-server)
+npm run dev      # in a second terminal
+```
+
+## 📁 Project Structure
+
+```
+MERN-APP/
+├── db/
+├── public/
+├── src/
+├── views/
+├── docker-compose.yml
+├── package.json
+├── server-compiled.js
+├── server-compiled.js.LICENSE.txt
+├── server.js
+└── webpack.config.js
+```
+
+## 👤 Author
+
+**Milad Mohammadi** — Frontend-Focused Full-Stack Developer, Toronto 🇨🇦
+
+[![Website](https://img.shields.io/badge/Website-miladweb.com-FF6A00?style=flat-square&logo=googlechrome&logoColor=white)](https://miladweb.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-miladmo68-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miladmo68/)
+[![GitHub](https://img.shields.io/badge/GitHub-miladmo68-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/miladmo68)
+
+<p align="center"><sub>If you like this project, consider giving it a ⭐</sub></p>
